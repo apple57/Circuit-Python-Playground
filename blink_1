@@ -1,0 +1,11 @@
+# import file
+from time import sleep
+from adafruit_circuitplayground import cp
+
+your_name = input("Enter your name: ")
+print("Hello", your_name)
+while True:
+  cp.red_led = True
+  sleep(0.5)
+  cp.red_led = False
+  sleep(0.5)
